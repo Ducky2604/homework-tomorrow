@@ -17,9 +17,9 @@
   <body>
     <!-- Navbar -->
     <!-- this is so we can make it responsive -->
-    <nav>
-      <div>
-        <a href="#">Academinyaa</a>
+    <nav class=" navbar bg-dark">
+        <a href="#">
+        </a>
 
         <button
           type="button"
@@ -28,30 +28,32 @@
         >
           <span></span>
         </button>
+          
 
-        <div id="navmenu">
-          <ul>
-            <li>
-              <a href="#learn">Learning Journey</a>
+
+        <nav id="navmenu"  class=" nav navbar-dark bg-dark">
+            <ul  class="navbar-nav nav-item">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Learning Journey </a>
             </li>
-            <li>
-              <a href="#questions">Nyaa?</a>
+            <li class="nav-item">
+              <a href="#questions" class="nav-link">Nyaa?</a>
             </li>
-            <li>
-              <a href="#instructors">Instructors</a>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">Instructors</a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
     </nav>
 
     <!-- Showcase -->
-    <section>
+    <section class="navbar bg-dark">
       <div>
         <div>
-          <div>
-            <h1>Become a <span> Cat </span></h1>
-            <p>
+          <div class="float-start">
+            <h1 class="btn btn-dark ms-2 " >Become a <span class="btn btn-warning"> Cat</span></h1>
+            <p class="btn btn-dark nav">
               Nap all day cat dog hate mouse eat string barf pillow no baths
               hate everything but kitty poochy. Sleep on keyboard toy mouse
               squeak roll over.
@@ -59,27 +61,35 @@
             <button
               data-bs-toggle="modal"
               data-bs-target="#enroll"
+              class="btn btn-primary"
+              style="margin-top:25px"
             >
               Start The Enrollment
             </button>
           </div>
           <img
             src="img/sushi.png"
-            alt=""
+            class="float-end"
+            alt="sample photo"
+            width="25%"
+            height="500px"
+            style="margin-left: 500px;
+            padding-bottom: 300px;"
           />
         </div>
       </div>
     </section>
 
     <!-- Newsletter -->
-    <section >
+    <section class="navbar  bg-warning "
+    style="padding-left: 40%;">
       <div>
-        <div>
-          <h3>Sign Up For Our Mewsletter</h3>
+        <div class="row">
+          <h3 class="col-sm-6 " >Sign Up For Our Mewsletter</h3>
 
-          <div>
-            <input type="text" placeholder="Enter Email" />
-            <button type="button">Submit</button>
+          <div class="col-sm-6">
+            <input type="text" class="btn btn-light col-sm-6 " placeholder="Enter Email" />
+            <button type="button" class="btn btn-dark  ">Submit</button>
           </div>
         </div>
       </div>
@@ -87,24 +97,24 @@
 
     <!-- Learn Sections -->
     <section id="learn">
-      <div>
-        <div>
+      <div class="navbar">
+        <div class="navbar-nav">
           <div>
-            <img src="img/cat.png" alt="" />
+            <img src="img/cat.png" alt="" class="nav-item" />
           </div>
-          <div>
+          <div class="nav-item" >
             <h2>Sleep 18 Hours</h2>
-            <p>
+            <p class="nav-item">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Similique deleniti possimus magnam corporis ratione facere!
             </p>
-            <p>
+            <p class="nav-item">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
               reiciendis eius autem eveniet mollitia, at asperiores suscipit
               quae similique laboriosam iste minus placeat odit velit quos,
               nulla architecto amet voluptates?
             </p>
-            <a href="#">
+            <a href="#" class="navbar bg-light nav-link ">
               <i></i> Read More
             </a>
           </div>
@@ -112,10 +122,10 @@
       </div>
     </section>
 
-    <section id="learn">
+    <section id="learn" class=" bg-dark">
       <div>
         <div>
-          <div>
+          <div class="btn btn-dark" >
             <h2>Meow All Night</h2>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -127,12 +137,15 @@
               quae similique laboriosam iste minus placeat odit velit quos,
               nulla architecto amet voluptates?
             </p>
-            <a href="#" >
-              <i></i> Read More
-            </a>
+            <a href="#" class=" navbar navbar-light bg-light nav-link">
+              <ul  class="navbar-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Read More</a>
+              </li>
+              </ul>
           </div>
           <div>
-            <img src="img/fish.png" alt="" />
+            <img src="img/fish.png" alt=""  />
           </div>
         </div>
       </div>
@@ -140,9 +153,9 @@
 
     <!-- Question Accordion -->
     <section id="questions">
-      <div>
-        <h2>Frequently Asked Questions</h2>
-        <div id="questions">
+      <div class="container">
+        <h2 class="text-center btn btn-primary disabled" role="button" style="width: 100%;">Frequently Asked Questions</h2>
+        <div id="questions ">
           <!-- Item 1 -->
           <div>
             <h2>
@@ -158,7 +171,7 @@
               id="question-one"
               data-bs-parent="#questions"
             >
-              <div>
+              <div class="text-left">
                 Fall asleep on the washing machine hide when guests come over
                 stare at guinea pigs yet vommit food and eat it again eat and
                 than sleep on your face. Jump five feet high and sideways when a
@@ -217,27 +230,27 @@
       </div>
     </section>
 
-    <section id="instructors">
+    <section id="instructors" class="bg-warning text-center" >
       <div>
-        <h2>Our Instructors</h2>
-        <p>
+        <h2 class="text-white ">Our Instructors</h2>
+        <p class="text-white">
           Our instructors all have 5+ years pooping on grasses while licking
           paws
         </p>
-        <div>
+        <div class="nav gap-5  " style="justify-content: center;">
           <div>
             <div>
-              <div>
+              <div >
                 <img src="img/kitty-1.png" alt="" />
                 <h3>Tuna</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
                 </p>
-                <a href="#"><i>twitter icon goes here</i></a>
-                <a href="#"><i>facebook icon goes here</i></a>
-                <a href="#"><i>linkedin icon goes here</i></a>
-                <a href="#"><i>instagram icon goes here</i></a>
+                <a href="#" style="text-decoration: none;"><i class="text-black list-style-none">twitter icon goes here</i></a>
+                <a href="#" style="text-decoration: none;"><i class="text-black">facebook icon goes here</i></a>
+                <a href="#" style="text-decoration: none;"><i class="text-black">linkedin icon goes here</i></a>
+                <a href="#" style="text-decoration: none;"><i class="text-black">instagram icon goes here</i></a>
               </div>
             </div>
           </div>
@@ -251,10 +264,10 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
                 </p>
-                <a href="#"><i>twitter icon goes here</i></a>
-                <a href="#"><i>facebook icon goes here</i></a>
-                <a href="#"><i>linkedin icon goes here</i></a>
-                <a href="#"><i>instagram icon goes here</i></a>
+                <a href="#" style="text-decoration: none;"><i class="text-black">twitter icon goes here</i></a>
+                <a href="#" style="text-decoration: none;"><i class="text-black">facebook icon goes here</i></a>
+                <a href="#" style="text-decoration: none;"><i class="text-black">linkedin icon goes here</i></a>
+                <a href="#" style="text-decoration: none;"><i class="text-black">instagram icon goes here</i></a>
               </div>
             </div>
           </div>
@@ -268,27 +281,27 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
                 </p>
-                <a href="#"><i>twitter icon goes here</i></a>
-                <a href="#"><i>facebook icon goes here</i></a>
-                <a href="#"><i>linkedin icon goes here</i></a>
-                <a href="#"><i>instagram icon goes here</i></a>
+                <a href="#" style="text-decoration: none;"><i class="text-black">twitter icon goes here</i></a>
+                <a href="#" style="text-decoration: none;"><i class="text-black">facebook icon goes here</i></a>
+                <a href="#" style="text-decoration: none;"><i class="text-black">linkedin icon goes here</i></a>
+                <a href="#" style="text-decoration: none;"><i class="text-black">instagram icon goes here</i></a>
               </div>
             </div>
           </div>
 
           <div>
             <div>
-              <div>
+              <div >
                 <img src="img/kitty-4.png" alt="" />
                 <h3>Ziggy</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
                 </p>
-                <a href="#"><i>twitter icon goes here</i></a>
-                <a href="#"><i>facebook icon goes here</i></a>
-                <a href="#"><i>linkedin icon goes here</i></a>
-                <a href="#"><i>instagram icon goes here</i></a>
+                <a href="#" style="text-decoration: none;"><i class="text-black ">twitter icon goes here</i></a>
+                <a href="#" style="text-decoration: none;"><i class="text-black">facebook icon goes here</i></a>
+                <a href="#" style="text-decoration: none;"><i class="text-black">linkedin icon goes here</i></a>
+                <a href="#" style="text-decoration: none;"><i class="text-black">instagram icon goes here</i></a>
               </div>
             </div>
           </div>
@@ -297,12 +310,12 @@
     </section>
 
     <!-- Contact & Map -->
-    <section>
+    <section class="container " >
       <div>
-        <div>
+        <div style="list-style: none; padding-bottom: 80px;">
           <div>
-            <h2>Contact Info</h2>
-            <ul>
+            <h2 style="list-style: none; padding-bottom: 30px; padding-top: 20px; justify-content: center;" class="text-center navbar">Contact Info</h2>
+            <ul style="list-style: none;">
               <li>
                 <span>Main Location:</span> Danboru
               </li>
@@ -331,8 +344,8 @@
 
     <!-- Footer -->
     <footer>
-      <div>
-        <p>Copyright &copy; 2021 Academinyaa</p>
+      <div class="btn btn-dark btn-block" style="width: 100%; height: 100px; justify-content: center;">
+        <p style="padding-top: 30px;">Copyright &copy; 2021 Academinyaa</p>
 
         <a href="#">
           <i></i>
